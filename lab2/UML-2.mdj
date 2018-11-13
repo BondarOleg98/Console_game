@@ -1,0 +1,1721 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"visible": true,
+					"defaultDiagram": true
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC5afYKh8feY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Robot",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFmC5515Knn4rE=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC5515anoMO4=",
+								"_parent": {
+									"$ref": "AAAAAAFmC5515Knn4rE="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC5afYKh8feY="
+								},
+								"visibility": "public",
+								"navigable": false,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC5515qnpy2M=",
+								"_parent": {
+									"$ref": "AAAAAAFmC5515Knn4rE="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC5a0+qj3HGU="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"visibility": "public",
+							"isDerived": false
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFmC6YV1qq7lgc=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC6YV1qq89AE=",
+								"_parent": {
+									"$ref": "AAAAAAFmC6YV1qq7lgc="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC5afYKh8feY="
+								},
+								"visibility": "public",
+								"navigable": false,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC6YV1qq95TU=",
+								"_parent": {
+									"$ref": "AAAAAAFmC6YV1qq7lgc="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC5an8KilwJQ="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"visibility": "public",
+							"isDerived": false
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFmC6YlaqsN58Y=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC6YlaqsOxeo=",
+								"_parent": {
+									"$ref": "AAAAAAFmC6YlaqsN58Y="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC5afYKh8feY="
+								},
+								"visibility": "public",
+								"navigable": false,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC6YlaqsPJEk=",
+								"_parent": {
+									"$ref": "AAAAAAFmC6YlaqsN58Y="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC5at9qjOIhc="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"visibility": "public",
+							"isDerived": false
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFmC716g8BRHO0=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC716hMBSwm4=",
+								"_parent": {
+									"$ref": "AAAAAAFmC716g8BRHO0="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC5afYKh8feY="
+								},
+								"visibility": "public",
+								"navigable": false,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC716hMBTNb4=",
+								"_parent": {
+									"$ref": "AAAAAAFmC716g8BRHO0="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC7yiQr7OCoI="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"visibility": "public",
+							"isDerived": false
+						},
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFmC8MuwMi+gKI=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC77eKsIRcDk="
+							},
+							"visibility": "public"
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFmC9T2I9J8YNM=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC9T2I9J9dM8=",
+								"_parent": {
+									"$ref": "AAAAAAFmC9T2I9J8YNM="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC5afYKh8feY="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC9T2I9J+xm4=",
+								"_parent": {
+									"$ref": "AAAAAAFmC9T2I9J8YNM="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC77eKsIRcDk="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "shared",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"visibility": "public",
+							"isDerived": false
+						},
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFmC/sZ8hKUv6A=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC/JOpwDlRDE="
+							},
+							"visibility": "public"
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFmDAHQSx6biiY=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmDAHQSx6cGf4=",
+								"_parent": {
+									"$ref": "AAAAAAFmDAHQSx6biiY="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC5afYKh8feY="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmDAHQSx6dccM=",
+								"_parent": {
+									"$ref": "AAAAAAFmDAHQSx6biiY="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC//ceBoSGFw="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "shared",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"visibility": "public",
+							"isDerived": false
+						}
+					],
+					"visibility": "public",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFmC/PEagRiQY4=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"name": "LevelCharger",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"type": "",
+							"isReadOnly": false,
+							"isOrdered": false,
+							"isUnique": false,
+							"isDerived": false,
+							"aggregation": "none",
+							"isID": false
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFmC/QURgS0fXo=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"name": "WeightCargo",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"type": "",
+							"isReadOnly": false,
+							"isOrdered": false,
+							"isUnique": false,
+							"isDerived": false,
+							"aggregation": "none",
+							"isID": false
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFmC/qIhxEu8uA=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"name": "State",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"type": "String",
+							"isReadOnly": false,
+							"isOrdered": false,
+							"isUnique": false,
+							"isDerived": false,
+							"aggregation": "none",
+							"isID": false
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+BBvuGJSAI=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"name": "Operation",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+Bg/eHboR0=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"name": "Robot",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+FGl+Rc9m0=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"name": "Raise",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+GQp+Sup5E=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"name": "Move",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC/ec3gnwHZ0=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"name": "SetRobotMemento",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC/hSVAvJjbk=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"name": "CreateMemento",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFmC/iPygv9fTE=",
+									"_parent": {
+										"$ref": "AAAAAAFmC/hSVAvJjbk="
+									},
+									"visibility": "public",
+									"isStatic": false,
+									"isLeaf": false,
+									"type": "Memento",
+									"isReadOnly": false,
+									"isOrdered": false,
+									"isUnique": false,
+									"direction": "return"
+								}
+							],
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmDAVplCYchKM=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"name": "RestoreHealth",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC5an8KilwJQ=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "LoadСapacity",
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+HgceVL4+o=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5an8KilwJQ="
+							},
+							"name": "LoadCapacity",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC5at9qjOIhc=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "BatteryСharge",
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+Ivl+ZEmMc=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5at9qjOIhc="
+							},
+							"name": "BatteryCharge",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC5a0+qj3HGU=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "AbstarctRobotFactory",
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+096/eSwQU=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5a0+qj3HGU="
+							},
+							"name": "AbstractRobotFactory",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+2y3fiZobI=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5a0+qj3HGU="
+							},
+							"name": "CreateCyborg",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+3nDfjrg/k=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5a0+qj3HGU="
+							},
+							"name": "CreateCleverBot",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+4wDvk9iiE=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5a0+qj3HGU="
+							},
+							"name": "CreateworkBot",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC5bR56kgR8U=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "СyborgFactory",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFmC5skzKmtmyA=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bR56kgR8U="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5bR56kgR8U="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC5a0+qj3HGU="
+							},
+							"visibility": "public"
+						},
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFmC6Zse6uAkZ0=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bR56kgR8U="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5bR56kgR8U="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC5at9qjOIhc="
+							},
+							"visibility": "public"
+						},
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFmC6aXZavZd9M=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bR56kgR8U="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5bR56kgR8U="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC5an8KilwJQ="
+							},
+							"visibility": "public"
+						}
+					],
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+KscOgckdA=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bR56kgR8U="
+							},
+							"name": "CyborgFactory",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+L58Ohu4QU=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bR56kgR8U="
+							},
+							"name": "CreateCyborg",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC5bXaqlJSQc=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "СleverBotFactory",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFmC5tfeKm+rYU=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bXaqlJSQc="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5bXaqlJSQc="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC5a0+qj3HGU="
+							},
+							"visibility": "public"
+						},
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFmC6k7jq5ZJh4=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bXaqlJSQc="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5bXaqlJSQc="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC5at9qjOIhc="
+							},
+							"visibility": "public"
+						},
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFmC6v0QrMMbhU=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bXaqlJSQc="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5bXaqlJSQc="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC5an8KilwJQ="
+							},
+							"visibility": "public"
+						}
+					],
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+tMYvQNJr8=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bXaqlJSQc="
+							},
+							"name": "CleverBotFactory",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+t98PRfP+U=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bXaqlJSQc="
+							},
+							"name": "CreateCleverBot",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC5bd2alyTn0=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "WorkBotFactory",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFmC5txy6nPOk0=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bd2alyTn0="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5bd2alyTn0="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC5a0+qj3HGU="
+							},
+							"visibility": "public"
+						},
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFmC6qLx7E7n0w=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bd2alyTn0="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5bd2alyTn0="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC5at9qjOIhc="
+							},
+							"visibility": "public"
+						},
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFmC65a+Lf5zaM=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bd2alyTn0="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC5bd2alyTn0="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC5an8KilwJQ="
+							},
+							"visibility": "public"
+						}
+					],
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+u0lPT8E7A=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bd2alyTn0="
+							},
+							"name": "WorkBotFactory",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC+v91PVOiB8=",
+							"_parent": {
+								"$ref": "AAAAAAFmC5bd2alyTn0="
+							},
+							"name": "CreateWorkBot",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC7yiQr7OCoI=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Keyboards",
+					"visibility": "public",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFmC9jpxdlEe4Q=",
+							"_parent": {
+								"$ref": "AAAAAAFmC7yiQr7OCoI="
+							},
+							"name": "command",
+							"visibility": "private",
+							"isStatic": false,
+							"isLeaf": false,
+							"type": "Command",
+							"isReadOnly": false,
+							"isOrdered": false,
+							"isUnique": false,
+							"isDerived": false,
+							"aggregation": "none",
+							"isID": false
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC9Z4e9Ukr4U=",
+							"_parent": {
+								"$ref": "AAAAAAFmC7yiQr7OCoI="
+							},
+							"name": "Cancel",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC9bm1NXhnwU=",
+							"_parent": {
+								"$ref": "AAAAAAFmC7yiQr7OCoI="
+							},
+							"name": "Invoker",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC9h5Fdf6gF4=",
+							"_parent": {
+								"$ref": "AAAAAAFmC7yiQr7OCoI="
+							},
+							"name": "Raise",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC9ik2thMQ+4=",
+							"_parent": {
+								"$ref": "AAAAAAFmC7yiQr7OCoI="
+							},
+							"name": "Move",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC77eKsIRcDk=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "ConcreteCommand",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFmC8Kohsc1NGI=",
+							"_parent": {
+								"$ref": "AAAAAAFmC77eKsIRcDk="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC77eKsIRcDk="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC8JMM8YC2MI="
+							},
+							"visibility": "public"
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFmC9QcK9AyiCc=",
+							"_parent": {
+								"$ref": "AAAAAAFmC77eKsIRcDk="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC9QcLNAzlgQ=",
+								"_parent": {
+									"$ref": "AAAAAAFmC9QcK9AyiCc="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC77eKsIRcDk="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC9QcLNA0GXo=",
+								"_parent": {
+									"$ref": "AAAAAAFmC9QcK9AyiCc="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC5afYKh8feY="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "shared",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"visibility": "public",
+							"isDerived": false
+						}
+					],
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC93alN5Fak8=",
+							"_parent": {
+								"$ref": "AAAAAAFmC77eKsIRcDk="
+							},
+							"name": "Execute",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC97kVt9O2NU=",
+							"_parent": {
+								"$ref": "AAAAAAFmC77eKsIRcDk="
+							},
+							"name": "Undo",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC98U6N+g3zo=",
+							"_parent": {
+								"$ref": "AAAAAAFmC77eKsIRcDk="
+							},
+							"name": "ConcreteCommand",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFmC9937N/U/Bo=",
+									"_parent": {
+										"$ref": "AAAAAAFmC98U6N+g3zo="
+									},
+									"name": "r",
+									"visibility": "public",
+									"isStatic": false,
+									"isLeaf": false,
+									"type": {
+										"$ref": "AAAAAAFmC5afYKh8feY="
+									},
+									"isReadOnly": false,
+									"isOrdered": false,
+									"isUnique": false,
+									"direction": "in"
+								}
+							],
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC8JMM8YC2MI=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "ICommand",
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC9vDyNwSH14=",
+							"_parent": {
+								"$ref": "AAAAAAFmC8JMM8YC2MI="
+							},
+							"name": "Command",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC9veA9xkj00=",
+							"_parent": {
+								"$ref": "AAAAAAFmC8JMM8YC2MI="
+							},
+							"name": "Execute",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC9wS+ty2+Hw=",
+							"_parent": {
+								"$ref": "AAAAAAFmC8JMM8YC2MI="
+							},
+							"name": "Undo",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC9Cidc+A9k8=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Client",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFmC9VES9MEWj8=",
+							"_parent": {
+								"$ref": "AAAAAAFmC9Cidc+A9k8="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC9VES9MFrs8=",
+								"_parent": {
+									"$ref": "AAAAAAFmC9VES9MEWj8="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC9Cidc+A9k8="
+								},
+								"visibility": "public",
+								"navigable": false,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC9VES9MGvpg=",
+								"_parent": {
+									"$ref": "AAAAAAFmC9VES9MEWj8="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC7yiQr7OCoI="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"visibility": "public",
+							"isDerived": false
+						},
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFmC9WVFNODR5k=",
+							"_parent": {
+								"$ref": "AAAAAAFmC9Cidc+A9k8="
+							},
+							"source": {
+								"$ref": "AAAAAAFmC9Cidc+A9k8="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC77eKsIRcDk="
+							},
+							"visibility": "public"
+						}
+					],
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC9+mt+BOCCg=",
+							"_parent": {
+								"$ref": "AAAAAAFmC9Cidc+A9k8="
+							},
+							"name": "Client",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC9/C7OCg4+0=",
+							"_parent": {
+								"$ref": "AAAAAAFmC9Cidc+A9k8="
+							},
+							"name": "Main",
+							"visibility": "private",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC/JOpwDlRDE=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "RobotMemento",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFmC/jc/gzRZP0=",
+							"_parent": {
+								"$ref": "AAAAAAFmC/JOpwDlRDE="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC/jc/wzSqRY=",
+								"_parent": {
+									"$ref": "AAAAAAFmC/jc/gzRZP0="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC/JOpwDlRDE="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "none",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFmC/jc/wzTR34=",
+								"_parent": {
+									"$ref": "AAAAAAFmC/jc/gzRZP0="
+								},
+								"reference": {
+									"$ref": "AAAAAAFmC/JVswFZjw8="
+								},
+								"visibility": "public",
+								"navigable": true,
+								"aggregation": "shared",
+								"isReadOnly": false,
+								"isOrdered": false,
+								"isUnique": false,
+								"isDerived": false,
+								"isID": false
+							},
+							"visibility": "public",
+							"isDerived": false
+						}
+					],
+					"visibility": "public",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFmC/kQtA4Tx6I=",
+							"_parent": {
+								"$ref": "AAAAAAFmC/JOpwDlRDE="
+							},
+							"name": "LevelCharger",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"type": "",
+							"isReadOnly": false,
+							"isOrdered": false,
+							"isUnique": false,
+							"isDerived": false,
+							"aggregation": "none",
+							"isID": false
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFmC/mw1A+CE1o=",
+							"_parent": {
+								"$ref": "AAAAAAFmC/JOpwDlRDE="
+							},
+							"name": "WeightCargo",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"type": "",
+							"isReadOnly": false,
+							"isOrdered": false,
+							"isUnique": false,
+							"isDerived": false,
+							"aggregation": "none",
+							"isID": false
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFmC/o1qxBzhAk=",
+							"_parent": {
+								"$ref": "AAAAAAFmC/JOpwDlRDE="
+							},
+							"name": "State",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"type": "String",
+							"isReadOnly": false,
+							"isOrdered": false,
+							"isUnique": false,
+							"isDerived": false,
+							"aggregation": "none",
+							"isID": false
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC/q1AxHpOfc=",
+							"_parent": {
+								"$ref": "AAAAAAFmC/JOpwDlRDE="
+							},
+							"name": "Memento",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFmC/rhxRImXP4=",
+									"_parent": {
+										"$ref": "AAAAAAFmC/q1AxHpOfc="
+									},
+									"name": "state",
+									"visibility": "public",
+									"isStatic": false,
+									"isLeaf": false,
+									"type": "String",
+									"isReadOnly": false,
+									"isOrdered": false,
+									"isUnique": false,
+									"direction": "in"
+								}
+							],
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC/JVswFZjw8=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "GameHistory",
+					"visibility": "public",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFmC/ZYugedrt8=",
+							"_parent": {
+								"$ref": "AAAAAAFmC/JVswFZjw8="
+							},
+							"name": "RobotMemento",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"type": "Memento",
+							"isReadOnly": false,
+							"isOrdered": false,
+							"isUnique": false,
+							"isDerived": false,
+							"aggregation": "none",
+							"isID": false
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmC/VpUwaXgOc=",
+							"_parent": {
+								"$ref": "AAAAAAFmC/JVswFZjw8="
+							},
+							"name": "GameHistory",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC/JdPQHNcPc=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Class3",
+					"visibility": "public",
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmC//ceBoSGFw=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Decorator",
+					"visibility": "public",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFmDAYy9yde428=",
+							"_parent": {
+								"$ref": "AAAAAAFmC//ceBoSGFw="
+							},
+							"name": "robot",
+							"visibility": "protected",
+							"isStatic": false,
+							"isLeaf": false,
+							"type": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"isReadOnly": false,
+							"isOrdered": false,
+							"isUnique": false,
+							"isDerived": false,
+							"aggregation": "none",
+							"isID": false
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmDAaYVyhiC3g=",
+							"_parent": {
+								"$ref": "AAAAAAFmC//ceBoSGFw="
+							},
+							"name": "Decorator",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmDAbyqCk7KAU=",
+							"_parent": {
+								"$ref": "AAAAAAFmC//ceBoSGFw="
+							},
+							"name": "RestoreHealth",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmDAc8yCmr2NM=",
+							"_parent": {
+								"$ref": "AAAAAAFmC//ceBoSGFw="
+							},
+							"name": "SetRobot",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFmDAeO0Snx8rg=",
+									"_parent": {
+										"$ref": "AAAAAAFmDAc8yCmr2NM="
+									},
+									"name": "component",
+									"visibility": "public",
+									"isStatic": false,
+									"isLeaf": false,
+									"type": "Component",
+									"isReadOnly": false,
+									"isOrdered": false,
+									"isUnique": false,
+									"direction": "in"
+								}
+							],
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmDAAnaBtKBV0=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "ConcreteComponent",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFmDAgYqC2+xHo=",
+							"_parent": {
+								"$ref": "AAAAAAFmDAAnaBtKBV0="
+							},
+							"source": {
+								"$ref": "AAAAAAFmDAAnaBtKBV0="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC5afYKh8feY="
+							},
+							"visibility": "public"
+						}
+					],
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmDALkvCPW9ZQ=",
+							"_parent": {
+								"$ref": "AAAAAAFmDAAnaBtKBV0="
+							},
+							"name": "ConcreteComponent",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmDAM7qyUZLOs=",
+							"_parent": {
+								"$ref": "AAAAAAFmDAAnaBtKBV0="
+							},
+							"name": "RestoreHealth",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFmDAk9Wy71M3U=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "ConcreateDecoratorA",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFmDArNYTElRr8=",
+							"_parent": {
+								"$ref": "AAAAAAFmDAk9Wy71M3U="
+							},
+							"source": {
+								"$ref": "AAAAAAFmDAk9Wy71M3U="
+							},
+							"target": {
+								"$ref": "AAAAAAFmC//ceBoSGFw="
+							},
+							"visibility": "public"
+						}
+					],
+					"visibility": "public",
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmDAnU5TAbEB8=",
+							"_parent": {
+								"$ref": "AAAAAAFmDAk9Wy71M3U="
+							},
+							"name": "ConcreateDecoratoe",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFmDAoLtjCLQvg=",
+							"_parent": {
+								"$ref": "AAAAAAFmDAk9Wy71M3U="
+							},
+							"name": "RestoreHealth",
+							"visibility": "public",
+							"isStatic": false,
+							"isLeaf": false,
+							"concurrency": "sequential",
+							"isQuery": false,
+							"isAbstract": false
+						}
+					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				}
+			],
+			"visibility": "public"
+		}
+	]
+}
