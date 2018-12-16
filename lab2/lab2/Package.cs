@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab2
 {
-    abstract class Package
+    public abstract class Package
     {
         public string Name { get; protected set; }
         public abstract int GetCost();
