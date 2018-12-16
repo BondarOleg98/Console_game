@@ -6,37 +6,27 @@ using System.Threading.Tasks;
 
 namespace lab2
 {
-    public class DecoderPackage : Package
+    class DecoderPackage : PackageDecorator
     {
-        public int Decoding(int robot)
+        Random random = new Random();
+        public DecoderPackage(Package package) : base("Decoder "+package.Name, package)
+        { }
+        public override int GetCost()
         {
-            int decode_flag = 0;
-            double decoding = 0;
-            Random random = new Random();
-            decoding = random.NextDouble();
-            switch (robot)
-            {
-                case 1:
-                    if (decoding < 0.1)
-                    {
-                        decode_flag = 1;
-                    }
-                    break;
-                case 2:
-                    if (decoding < 1)
-                    {
-                        decode_flag = 1;
-                    }
-                    break;
-                case 3:
-                    if (decoding < 0.6)
-                    {
-                        decode_flag = 1;
-                    }
-                    break;
-
-            }
-            return decode_flag;
+            return package.GetCost() + 20;
+        }
+        public override int GetWeight()
+        {
+            return package.GetWeight() + 1;
+        }
+        
+        public override int TotalMoney(int money)
+        {
+            return GetCost() + money;
+        }
+        public override int TotalWeight(int current_weight)
+        {
+            return GetWeight() + current_weight;
         }
     }
 }
