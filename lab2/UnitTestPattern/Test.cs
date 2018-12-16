@@ -46,10 +46,10 @@ namespace UnitTestPattern
             Robot robot = createRobot.Create();
             CleverBot cleverBot = new CleverBot();
             string result1 = "0";
-            string result2 = "Your weight: " + 0 + " , charge: " + 89;
+            string result2 = "0";
             RobotMemento robotMemento = new RobotMemento(10, 20, 65);
             result1 = cleverBot.RestoreState(robotMemento);
-            result2 = "Restore game: charge - " + 10 + ", weight - " + 20 + " ,cost - " + 65;
+            result2 = "Restore game: money - " + 65 + ", weight - " + 20 + " ,charge - " + 10;
             Assert.AreEqual(result1, result2);
 
             GameHistory gameHistory = new GameHistory();
@@ -58,18 +58,13 @@ namespace UnitTestPattern
             Assert.AreEqual(result1, result2);
         }
         [TestMethod]
-        public void TestSomeFunction()
+        public void TestFunctionLostEnergyMove()
         {
             CleverBot cleverBot = new CleverBot();
             string result1 = "0";
-            string result2 = "Your weight: " + 0 + " , charge: " + 89;
-            result1 = cleverBot.LostEnergy();
+            string result2 = "Money: " + 0 + " Weight: "+ 0 + " Charge: " + 89;
+            result1 = cleverBot.LostEnergyMove();
             Assert.AreEqual(result1, result2);
-
-            int decode_result = 0;
-            //DecoderPackage decoderPackage = new DecoderPackage();
-            //decode_result = decoderPackage.Decoding(2);
-            //Assert.AreEqual(1, decode_result);
         }
     }
 }
