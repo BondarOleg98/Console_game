@@ -21,9 +21,9 @@ namespace lab2
         {
             return "Take the package";
         }
-        public string Put()
+        /*public string Put()
         {
             return "Put the package";
-        }
+        }*/
     }
 }

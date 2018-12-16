@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab2
 {
-    public class Move : ICommand
+    public class Move : ICommandMove
     {
         Robot move;
         public Move(Robot mv)
