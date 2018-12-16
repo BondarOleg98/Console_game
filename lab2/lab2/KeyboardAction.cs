@@ -6,23 +6,19 @@ using System.Threading.Tasks;
 
 namespace lab2
 {
-    public class KeyboardTake
+    public class KeyboardAction
     {
-        ICommand command;
+        ICommandAction command;
 
-        public KeyboardTake() { }
+        public KeyboardAction() { }
 
-        public void SetCommand(ICommand com)
+        public void SetCommand(ICommandAction com)
         {
             command = com;
         }
         public string TakeButton()
         {
             return command.Execute();
-        }
-        public string PutButton()
-        {
-            return command.Undo();
         }
     }
 }

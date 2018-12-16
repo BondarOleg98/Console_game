@@ -6,21 +6,25 @@ using System.Threading.Tasks;
 
 namespace lab2
 {
-    class DangerPackage : PackageDecorator
+    class SamplePackage : Package
     {
-        public DangerPackage(Package package) : base("Danger "+ package.Name, package)
+        public SamplePackage() : base("Package")
         { }
+
+        Random random = new Random();
+       
+
         public override int GetCost()
-        {
-            return 0;
+        {       
+            return random.Next(15, 25);
         }
         public override int GetWeight()
         {
-            return 0;
+            return random.Next(10, 40);
         }
         public override int TotalMoney(int money)
         {
-            return GetCost()+money;
+            return GetCost() + money;
         }
         public override int TotalWeight(int current_weight)
         {

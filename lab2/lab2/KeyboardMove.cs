@@ -8,11 +8,11 @@ namespace lab2
 {
     public class KeyboardMove
     {
-        ICommand command;
+        ICommandMove command;
 
         public KeyboardMove() { }
 
-        public void SetCommand(ICommand com)
+        public void SetCommand(ICommandMove com)
         {
             command = com;
         }

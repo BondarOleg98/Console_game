@@ -35,8 +35,8 @@ namespace UnitTestPattern
             keyboard_move.SetCommand(new Move(robot));
             Assert.AreEqual(move.Undo(), keyboard_move.PressUndo());
 
-            KeyboardTake keyboardTake = new KeyboardTake();
-            keyboardTake.SetCommand(new TakePut(robot));
+            KeyboardAction keyboardTake = new KeyboardAction();
+            keyboardTake.SetCommand(new lab2.Action(robot));
             Assert.AreEqual(move.Execute(), keyboard_move.PressButton());
         }
         [TestMethod]
@@ -67,9 +67,9 @@ namespace UnitTestPattern
             Assert.AreEqual(result1, result2);
 
             int decode_result = 0;
-            DecoderPackage decoderPackage = new DecoderPackage();
-            decode_result = decoderPackage.Decoding(2);
-            Assert.AreEqual(1, decode_result);
+            //DecoderPackage decoderPackage = new DecoderPackage();
+            //decode_result = decoderPackage.Decoding(2);
+            //Assert.AreEqual(1, decode_result);
         }
     }
 }

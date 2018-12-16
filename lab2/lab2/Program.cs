@@ -13,7 +13,6 @@ namespace lab2
             Console.WriteLine("Welcome to the game Robots");
             Random random = new Random();
             double numberBot = random.NextDouble();          
-            string flag_history = "h";
             string result = "0";
             
             string move = "0";
@@ -22,12 +21,12 @@ namespace lab2
             {
                 CreateRobot createRobot = new CreateCleverBot();
                 Robot robot = createRobot.Create();
-                CleverBot cleverBot = new CleverBot(flag_history);
+                CleverBot cleverBot = new CleverBot();
                 Console.WriteLine(cleverBot.RobotLegend());
                 KeyboardMove keyboard_move = new KeyboardMove();
                 keyboard_move.SetCommand(new Move(robot));
-                KeyboardTake keyboard_take = new KeyboardTake();
-                keyboard_take.SetCommand(new TakePut(robot));
+                KeyboardAction keyboard_take = new KeyboardAction();
+                keyboard_take.SetCommand(new Action(robot));
                 GameHistory gameHistory = new GameHistory();
                 ConsoleKeyInfo key;
                 do
@@ -40,10 +39,10 @@ namespace lab2
                             move = keyboard_move.PressButton();
                             Console.WriteLine(move);
                             gameHistory.History.Push(cleverBot.SaveState());
-                            result = cleverBot.LostEnergy();
+                            result = cleverBot.LostEnergyMove();
                             if (result == "0")
                             {
-                                result = cleverBot.TotalCost();
+                                result = cleverBot.Progress();
                                 Console.WriteLine("----------------------------------------------------------");
                                 Console.WriteLine("Game over:" + result);
                                 Console.ReadKey();
@@ -57,10 +56,10 @@ namespace lab2
                             move = keyboard_move.PressUndo();
                             Console.WriteLine(move);
                             gameHistory.History.Push(cleverBot.SaveState());
-                            result = cleverBot.LostEnergy();
+                            result = cleverBot.LostEnergyMove();
                             if (result == "0")
                             {
-                                result = cleverBot.TotalCost();
+                                result = cleverBot.Progress();
                                 Console.WriteLine("----------------------------------------------------------");
                                 Console.WriteLine("Game over:" + result);
                                 Console.ReadKey();
@@ -87,10 +86,10 @@ namespace lab2
                             take  =  keyboard_take.TakeButton();
                             Console.WriteLine(take);
                             gameHistory.History.Push(cleverBot.SaveState());
-                            result = cleverBot.LoadCapacity();
+                            result = cleverBot.WeightEnergy();
                             if (result == "0")
                             {
-                                result = cleverBot.TotalCost();
+                                result = cleverBot.Progress();
                                 Console.WriteLine("----------------------------------------------------------");
                                 Console.WriteLine("Game over:" + result);
                                 Console.ReadKey();
@@ -109,12 +108,12 @@ namespace lab2
             {
                 CreateRobot createRobot = new CreateCyborg();
                 Robot robot = createRobot.Create();
-                Cyborg cyborg = new Cyborg(flag_history);
+                Cyborg cyborg = new Cyborg();
                 Console.WriteLine(cyborg.RobotLegend());
                 KeyboardMove keyboard_move = new KeyboardMove();
                 keyboard_move.SetCommand(new Move(robot));
-                KeyboardTake keyboard_take = new KeyboardTake();
-                keyboard_take.SetCommand(new TakePut(robot));
+                KeyboardAction keyboard_take = new KeyboardAction();
+                keyboard_take.SetCommand(new Action(robot));
                 GameHistory gameHistory = new GameHistory();
                 ConsoleKeyInfo key;
                 do
@@ -127,10 +126,10 @@ namespace lab2
                             move = keyboard_move.PressButton();
                             Console.WriteLine(move);
                             gameHistory.History.Push(cyborg.SaveState());                          
-                            result = cyborg.LostEnergy();
+                            result = cyborg.LostEnergyMove();
                             if (result == "0")
                             {
-                                result = cyborg.TotalCost();
+                                result = cyborg.Progress();
                                 Console.WriteLine("----------------------------------------------------------");
                                 Console.WriteLine("Game over:" + result);
                                 Console.ReadKey();
@@ -142,10 +141,10 @@ namespace lab2
                             move = keyboard_move.PressUndo();
                             Console.WriteLine(move);
                             gameHistory.History.Push(cyborg.SaveState());
-                            result = cyborg.LostEnergy();
+                            result = cyborg.LostEnergyMove();
                             if (result == "0")
                             {
-                                result = cyborg.TotalCost();
+                                result = cyborg.Progress();
                                 Console.WriteLine("----------------------------------------------------------");
                                 Console.WriteLine("Game over:" + result);
                                 Console.ReadKey();
@@ -172,10 +171,10 @@ namespace lab2
                             take = keyboard_take.TakeButton();
                             Console.WriteLine(take);
                             gameHistory.History.Push(cyborg.SaveState());
-                            result = cyborg.LoadCapacity();
+                            result = cyborg.WeightEnergy();
                             if (result == "0")
                             {
-                                result = cyborg.TotalCost();
+                                result = cyborg.Progress();
                                 Console.WriteLine("----------------------------------------------------------");
                                 Console.WriteLine("Game over:" + result);
                                 Console.ReadKey();
@@ -195,12 +194,12 @@ namespace lab2
             {
                 CreateRobot createRobot = new CreateWorkBot();
                 Robot robot = createRobot.Create();
-                WorkBot workBot = new WorkBot(flag_history);
+                WorkBot workBot = new WorkBot();
                 Console.WriteLine(workBot.RobotLegend());
                 KeyboardMove keyboard_move = new KeyboardMove();
                 keyboard_move.SetCommand(new Move(robot));
-                KeyboardTake keyboard_take = new KeyboardTake();
-                keyboard_take.SetCommand(new TakePut(robot));
+                KeyboardAction keyboard_take = new KeyboardAction();
+                keyboard_take.SetCommand(new Action(robot));
                 GameHistory gameHistory = new GameHistory();
                 ConsoleKeyInfo key;
                 do
@@ -213,10 +212,10 @@ namespace lab2
                             move = keyboard_move.PressButton();
                             Console.WriteLine(move);
                             gameHistory.History.Push(workBot.SaveState());
-                            result = workBot.LostEnergy();
+                            result = workBot.LostEnergyMove();
                             if (result == "0")
                             {
-                                result = workBot.TotalCost();
+                                result = workBot.Progress();
                                 Console.WriteLine("----------------------------------------------------------");
                                 Console.WriteLine("Game over:" + result);
                                 Console.ReadKey();
@@ -228,10 +227,10 @@ namespace lab2
                             move = keyboard_move.PressUndo();
                             Console.WriteLine(move);
                             gameHistory.History.Push(workBot.SaveState());
-                            result = workBot.LostEnergy();
+                            result = workBot.LostEnergyMove();
                             if (result == "0")
                             {
-                                result = workBot.TotalCost();
+                                result = workBot.Progress();
                                 Console.WriteLine("----------------------------------------------------------");
                                 Console.WriteLine("Game over:" + result);
                                 Console.ReadKey();
@@ -258,10 +257,10 @@ namespace lab2
                             take = keyboard_take.TakeButton();
                             Console.WriteLine(take);
                             gameHistory.History.Push(workBot.SaveState());
-                            result = workBot.LoadCapacity();
+                            result = workBot.WeightEnergy();
                             if (result == "0")
                             {
-                                result = workBot.TotalCost();
+                                result = workBot.Progress();
                                 Console.WriteLine("----------------------------------------------------------");
                                 Console.WriteLine("Game over:" + result);
                                 Console.ReadKey();

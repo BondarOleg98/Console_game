@@ -8,38 +8,32 @@ namespace lab2
 {
     public class CleverBot : Robot
     {
+        private int load = 0;
+        private int current_load =0 ;
+        private int money = 0;
         private int charge = 90;
-        private int weight = 0;
-        private int cost = 0;
+
         private int package_flag = 0;
-        Guid unique = Guid.NewGuid();
-        string Legend = "History:\n" +
-            "avatar:-\nname: CleverBot\n" +
-            "vulnerabilities: -\n" +
-            "opportunities: max weight 30 kg, charge - 90%\n" +
-            "decoding: 100%";
-        string Flag_legend = "0";
         public CleverBot()
         {
-            Console.WriteLine("Unique code: " + unique);
-            Console.WriteLine("Your bot is cleverbot");
+            RobotLegend();
         }
-        public CleverBot(string flag_legend)
-        {
-            Flag_legend = flag_legend;
-        }
+
         public string RobotLegend()
         {
-            string output_legend = "0";
-            switch (Flag_legend)
-            {
-                case "h":
-                    output_legend = Legend;
-                    break;
-            }
+            Guid unique = Guid.NewGuid();
+
+            string output_legend = "Your bot is cleverbot\n" +
+                "Unique code: " + unique + "\nHistory:" +
+                "\navatar:-\nname: CleverBot\n" +
+            "vulnerabilities: -\n" +
+            "opportunities: max weight 30 kg, charge - 90%\n" +
+            "decoding: 100%\n" +
+            "----------------------------------------------------" +
+            "\nMove - button left,right   Exit - q";
             return output_legend;
         }
-        public string LostEnergy()
+        public string LostEnergyMove()
         {
             string result = "0";
             if (charge == 0)
@@ -48,105 +42,106 @@ namespace lab2
                 return result;
             }
             else
-            {
                 charge--;
-            }
-            result = "Your weight: " + weight + " , charge: " + charge;
+           result = "Money: " + money + " Weight: "
+                        + load + " Charge: " + charge;
             return result;
         }
-        public string LoadCapacity()
+        public string WeightEnergy()
         {
             string result = "0";
             int decode_flag = 0;
-            int bad_flag = 0;
-            Package package = new Package();
             Random random = new Random();
             package_flag = random.Next(1, 4);
-
+            Package package = new SamplePackage();
             switch (package_flag)
             {
                 case 1:
-                    BadPackage badPackage = new BadPackage();
-                    bad_flag = badPackage.TakeBadPackage();
-                    if (bad_flag == 1)
+                    package = new BadPackage(package);
+                    money = package.TotalMoney(money);
+                    if (charge <= 0)
                     {
-                        result = "Sorry package is bad";
-                        return result;
-                    }
-                    break;
-
-                case 2:
-                    DecoderPackage decoder = new DecoderPackage();
-                    decode_flag = decoder.Decoding(2);
-                    if (decode_flag == 1)
-                    {
-                        result = "Decoding is successful";
+                        charge = 0;
+                        result = "0";
                         break;
                     }
-                    else
+                    result = package.Name + "\nMoney: " + money + " Weight: "
+                        + load + " Charge: " + charge;
+                    return result;
+
+                case 2:
+                    package = new DecoderPackage(package);
+                    decode_flag = package.Decoding(2);
+                   
+                    
+                    current_load = package.GetWeight();
+    
+                    if (decode_flag == 0)
                     {
                         result = "Decoding is not success";
+                        break;
+                    }
+                    
+                    if (current_load > 30)
+                    {
+                        result = "Your weight more than 30 kg";
                         return result;
                     }
+                    money = package.TotalMoney(money);
+                    load = package.TotalWeight(load);
+                    if (current_load <= 5)
+                        charge -= 2;
+                    else if (current_load <= 20)
+                        charge -= 4;
+                    else
+                        charge -= 5;
+
+                    if (charge <= 0)
+                    {
+                        charge = 0;
+                        result = "0";
+                        break;
+                    }
+
+                    result = package.Name + "\nMoney: " + money + " Weight: "
+                        + load + " Charge: " + charge;
+                    break;
                 case 3:
-                    DangerPackage danger = new DangerPackage();
-                    charge = danger.TakeCharge(charge);
-                    result = "Danger package: your charge " + charge;
+                    package = new DangerPackage(package);
+                   
+                    money = package.TotalMoney(money)+5;
+                    if (charge <= 0)
+                    {
+                        charge = 0;
+                        result = "0";
+                        return result;
+                    }
+                    result = "Toxic: " + package.Name + "\nMoney: " + money + " Weight: "
+                       + load + " Charge: " + charge;
                     return result;
             }
-
-            if (package.Weight() > 30)
-            {
-                result = "Your weight more than 30 kg";
-            }
-            else
-            {
-                if (package.Weight() <= 5)
-                {
-                    charge -= 2;
-                }
-                else if (package.Weight() <= 20)
-                {
-                    charge -= 4;
-                }
-                else
-                {
-                    charge -= 5;
-                }
-                weight = weight + package.Weight();
-
-            }
-            if (charge <= 0)
-            {
-                charge = 0;
-                result = "0";
-            }
-            else
-            {
-                result = "Your weight: " + weight + " , charge: " + charge +TotalCost();
-            }
+            
             return result;
         }
-        public string TotalCost()
+        public string Progress()
         {
-            string result = "0";
-            Package package = new Package();
-            cost = cost + package.Cost();
-            result = " ,cost: " + cost;
+            string result;
+            result = "\nMoney: " + money + " Weight: "
+                        + load + " Charge: " + charge;
             return result;
         }
 
         public RobotMemento SaveState()
         {
-            return new RobotMemento(charge, weight, cost);
+            return new RobotMemento(charge, load, money);
         }
         public string RestoreState(RobotMemento memento)
         {
             string result = "0";
             charge = memento.Battery_charge;
-            weight = memento.Weight_package;
-            cost = memento.Cost_package;
-            result = "Restore game: charge - " + charge + ", weight - " + weight + " ,cost - " + cost;
+            load = memento.Weight_package;
+            money = memento.Cost_package;
+            result = "Restore game: money - " + money + ", weight - " + load + " ,charge - " + charge;
             return result;
         }
     }

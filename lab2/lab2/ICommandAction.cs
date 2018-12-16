@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace lab2
 {
-    public interface ICommand
+    public interface ICommandAction
     {
         string Execute();
-        string Undo();     
     }
 }

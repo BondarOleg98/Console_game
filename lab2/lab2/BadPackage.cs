@@ -6,14 +6,25 @@ using System.Threading.Tasks;
 
 namespace lab2
 {
-    public class BadPackage : Package
+    class BadPackage : PackageDecorator
     {
-        public int TakeBadPackage()
+        public BadPackage(Package package) : base( "Bad " + package.Name, package)
+        { }
+        public override int GetCost()
         {
-            int bad_flag = 0;
-            Random random = new Random();
-            bad_flag = random.Next(0, 1);
-            return bad_flag;
+            return 0;
+        }
+        public override int GetWeight()
+        {
+            return 0;
+        }
+        public override int TotalMoney(int money)
+        {
+            return GetCost() + money;
+        }
+        public override int TotalWeight(int current_weight)
+        {
+            return GetWeight() + current_weight;
         }
     }
 }
